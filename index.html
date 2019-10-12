@@ -38,7 +38,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:15, minZoom:9
-        }).fitBounds([[35.7328550264,138.935837229],[36.9564594109,141.849942143]]);
+        }).fitBounds([[35.6410465894,139.283812754],[37.0481745137,141.40306702]]);
         var hash = new L.Hash(map);
         map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
         var bounds_group = new L.featureGroup([]);
@@ -50,7 +50,7 @@
         function setBounds() {
             map.setMaxBounds(map.getBounds());
         }
-        var overlay_mierune_normal_0 = L.tileLayer('https://tile.mierune.co.jp/mierune/{z}/{x}/{y}.png ', {
+        var overlay_mierune_normal_0 = L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', {
             opacity: 1.0
         });
         overlay_mierune_normal_0.addTo(map);
@@ -61,32 +61,11 @@
                         <td colspan="2">' + (feature.properties['N03_001'] !== null ? Autolinker.link(String(feature.properties['N03_001'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['N03_002'] !== null ? Autolinker.link(String(feature.properties['N03_002'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['N03_003'] !== null ? Autolinker.link(String(feature.properties['N03_003'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <td colspan="2">' + (feature.properties['N03_004'] !== null ? Autolinker.link(String(feature.properties['N03_004'])) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['N03_007'] !== null ? Autolinker.link(String(feature.properties['N03_007'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Dojo'] !== null ? Autolinker.link(String(feature.properties['Dojo'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Scratch'] !== null ? Autolinker.link(String(feature.properties['Scratch'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['IslayTouch'] !== null ? Autolinker.link(String(feature.properties['IslayTouch'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['rasb_ypy'] !== null ? Autolinker.link(String(feature.properties['rasb_ypy'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Others'] !== null ? Autolinker.link(String(feature.properties['Others'])) : '') + '</td>\
-                    </tr>\
+					<tr>\
+						<td><font color="white">□■□■□■□■□■□■□■</font></td>\
+					</tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
@@ -139,39 +118,54 @@
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? Autolinker.link(String(feature.properties['id'])) : '') + '</td>\
                     </tr>\
+					<tr>\
+						<td colspan="2">【道場名】</td>\
+					</tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['DojoNAME'] !== null ? Autolinker.link(String(feature.properties['DojoNAME'])) : '') + '</td>\
                     </tr>\
+					<tr>\
+						<td colspan="2">【場所】</td>\
+					</tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Facility'] !== null ? Autolinker.link(String(feature.properties['Facility'])) : '') + '</td>\
                     </tr>\
+					<tr>\
+						<td colspan="2">【住所】</td>\
+					</tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['postNum'] !== null ? Autolinker.link(String(feature.properties['postNum'])) : '') + '</td>\
+                        <td colspan="3">' + (feature.properties['postNum'] !== null ? Autolinker.link(String(feature.properties['postNum'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Location1'] !== null ? Autolinker.link(String(feature.properties['Location1'])) : '') + '</td>\
+                        <td colspan="3">' + (feature.properties['Location1'] !== null ? Autolinker.link(String(feature.properties['Location1'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Liocation2'] !== null ? Autolinker.link(String(feature.properties['Liocation2'])) : '') + '</td>\
+                        <td colspan="3">' + (feature.properties['Liocation2'] !== null ? Autolinker.link(String(feature.properties['Liocation2'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Location3'] !== null ? Autolinker.link(String(feature.properties['Location3'])) : '') + '</td>\
+                        <td colspan="3">' + (feature.properties['Location3'] !== null ? Autolinker.link(String(feature.properties['Location3'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Location4'] !== null ? Autolinker.link(String(feature.properties['Location4'])) : '') + '</td>\
+                        <td colspan="3">' + (feature.properties['Location4'] !== null ? Autolinker.link(String(feature.properties['Location4'])) : '') + '</td>\
+                    </tr>\
+					<tr>\
+						<td colspan="2">【内容】</td>\
+					</tr>\
+                    <tr>\
+                        <td colspan="2"> Scratch：' + (feature.properties['Scratch'] !== null ? Autolinker.link(String(feature.properties['Scratch'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Scratch'] !== null ? Autolinker.link(String(feature.properties['Scratch'])) : '') + '</td>\
+                        <td colspan="2"> IslayTouch：' + (feature.properties['IslayTouch'] !== null ? Autolinker.link(String(feature.properties['IslayTouch'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['IslayTouch'] !== null ? Autolinker.link(String(feature.properties['IslayTouch'])) : '') + '</td>\
+                        <td colspan="2"> RasberryPy：' + (feature.properties['RasberryPy'] !== null ? Autolinker.link(String(feature.properties['RasberryPy'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['RasberryPy'] !== null ? Autolinker.link(String(feature.properties['RasberryPy'])) : '') + '</td>\
+                        <td colspan="2"> Others：' + (feature.properties['Others'] !== null ? Autolinker.link(String(feature.properties['Others'])) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Others'] !== null ? Autolinker.link(String(feature.properties['Others'])) : '') + '</td>\
-                    </tr>\
+					<tr>\
+						<td><font color="white">□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■□■</font></td>\
+					</tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
