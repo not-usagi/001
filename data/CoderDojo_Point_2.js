@@ -1,0 +1,14 @@
+var json_CoderDojo_Point_2 = {
+"type": "FeatureCollection",
+"name": "CoderDojo_Point_2",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "1", "DojoNAME": "CoderDojoMoriya", "Facility": "南守谷児童センター「ミ・ナーデ」", "postNum": "302-0128\n", "Location1": "茨城県", "Liocation2": "守谷市", "Location3": "けやき台", "Location4": "4-5-1", "Scratch": "○", "IslayTouch": null, "RasberryPy": null, "Others": "○" }, "geometry": { "type": "Point", "coordinates": [ 139.995088848648777, 35.934239687420636 ] } },
+{ "type": "Feature", "properties": { "id": "2", "DojoNAME": "CoderDojoHitachinaka", "Facility": "ひたちなか市子育て支援・多世代交流施設ふぁみりこらぼ　303研修室\n", "postNum": "312-0057", "Location1": "茨城県", "Liocation2": "ひたちなか市", "Location3": "石川町", "Location4": "11-1", "Scratch": "○", "IslayTouch": "○", "RasberryPy": null, "Others": null }, "geometry": { "type": "Point", "coordinates": [ 140.528021233686815, 36.390257404309295 ] } },
+{ "type": "Feature", "properties": { "id": "3", "DojoNAME": "CoderDojoTsukuba", "Facility": "つくばイノベーションプラザ", "postNum": "305-0031", "Location1": "茨城県", "Liocation2": "つくば市", "Location3": "吾妻", "Location4": "1-10-1", "Scratch": "○", "IslayTouch": null, "RasberryPy": null, "Others": null }, "geometry": { "type": "Point", "coordinates": [ 140.114289593613734, 36.081347001616493 ] } },
+{ "type": "Feature", "properties": { "id": "4", "DojoNAME": "CoderDojo古河", "Facility": "古河ホームPCサービス", "postNum": "306-0233", "Location1": "茨城県", "Liocation2": "古河市", "Location3": "西牛谷", "Location4": "1704-2", "Scratch": "○", "IslayTouch": null, "RasberryPy": "○", "Others": null }, "geometry": { "type": "Point", "coordinates": [ 139.728862143291281, 36.201183702109688 ] } },
+{ "type": "Feature", "properties": { "id": "5", "DojoNAME": "CoderDojoMito", "Facility": "水戸市内原中央公民館　2階視聴覚室", "postNum": "319-0315", "Location1": "茨城県", "Liocation2": "水戸市", "Location3": "内原町", "Location4": "1395-6", "Scratch": "○", "IslayTouch": "○", "RasberryPy": null, "Others": null }, "geometry": { "type": "Point", "coordinates": [ 140.356484560243359, 36.362138139800429 ] } },
+{ "type": "Feature", "properties": { "id": "6", "DojoNAME": "CoderDojo日立", "Facility": "日立シビックセンター", "postNum": "317-0073", "Location1": "茨城県", "Liocation2": "日立市", "Location3": "幸町", "Location4": "1-21-1", "Scratch": "○", "IslayTouch": null, "RasberryPy": null, "Others": null }, "geometry": { "type": "Point", "coordinates": [ 140.659545455975575, 36.590273807890313 ] } },
+{ "type": "Feature", "properties": { "id": "7", "DojoNAME": "CoderDojoひたちなか六ツ野", "Facility": "大島コミュニティセンター", "postNum": "312-0053", "Location1": "茨城県", "Liocation2": "ひたちなか市", "Location3": "外の", "Location4": "1-1-1", "Scratch": "○", "IslayTouch": null, "RasberryPy": null, "Others": null }, "geometry": { "type": "Point", "coordinates": [ 140.535317107107119, 36.403719209672701 ] } }
+]
+}
